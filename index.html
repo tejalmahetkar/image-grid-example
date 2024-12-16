@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NxN Grid with Images</title>
+  <style>
+    /* Styling the body */
+    body {
+      display: flex; /* Centers the grid horizontally and vertically */
+      justify-content: center; /* Aligns items horizontally */
+      align-items: center; /* Aligns items vertically */
+      min-height: 100vh; /* Ensures the body takes full viewport height */
+      margin: 0; /* Removes default margin */
+      background-color: #f4f4f4; /* Sets a light background color */
+      font-family: Arial, sans-serif; /* Sets the font style */
+    }
+
+    /* Grid container styling */
+    .grid-container {
+      display: grid; /* Enables grid layout */
+      grid-template-columns: repeat(3, 1fr); /* Creates a 3x3 grid (N=3 for now) */
+      gap: 10px; /* Adds space between grid items */
+      max-width: 90%; /* Limits the grid's width for responsiveness */
+    }
+
+    /* Styling each grid block */
+    .grid-item {
+      background: #fff; /* White background for each block */
+      border: 1px solid #ccc; /* Adds a light gray border */
+      border-radius: 8px; /* Rounds the corners slightly */
+      display: flex; /* Centers the image inside the block */
+      justify-content: center; /* Horizontally centers content */
+      align-items: center; /* Vertically centers content */
+      overflow: hidden; /* Ensures content doesn't overflow outside the block */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for better visibility */
+    }
+
+    /* Styling the images inside each grid block */
+    .grid-item img {
+      width: 100%; /* Makes the image take full width of the block */
+      height: 100%; /* Makes the image take full height of the block */
+      object-fit: cover; /* Ensures the image fits properly without distortion */
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <!-- Grid items with placeholder images -->
+    <div class="grid-item"><img src="https://via.placeholder.com/150" alt="Image 1"></div>
+    <div class="grid-item"><img src="https://via.placeholder.com/150" alt="Image 2"></div>
+    <div class="grid-item"><img src="https://via.placeholder.com/150" alt="Image 3"></div>
+    <div class="grid-item"><img src="https://via.placeholder.com/150" alt="Image 4"></div>
+    <div class="grid-item"><img src="https://via.placeholder.com/150" alt="Image 5"></div>
+    <div class="grid-item"><img src="https://via.placeholder.com/150" alt="Image 6"></div>
+  </div>
+</body>
+</html>
